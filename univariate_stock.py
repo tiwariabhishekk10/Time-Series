@@ -13,9 +13,8 @@ from keras.layers import Conv1D, MaxPooling1D
 def parser(x):
     return datetime.strptime(x,'%d-%m-%Y')
 
-####LSTM####
-
-dataset=pd.read_csv(r"D:\Time Series Paper\stock_train.csv",index_col=0,parse_dates=[0],date_parser=parser)
+url='https://raw.githubusercontent.com/tiwariabhishekk10/Time-Series/master/Google_Stock.csv'
+dataset=pd.read_csv(url,index_col=0,parse_dates=[0],date_parser=parser)
 dataset
 
 open = dataset[dataset.columns[0:1]]
