@@ -22,7 +22,7 @@ from keras.layers import Activation
 def parser(x):
     return datetime.strptime(x,'%d-%m-%Y %H:%M')
 
-url='https://raw.githubusercontent.com/tiwariabhishekk10/abhishek/master/multivariate.csv'
+url='https://raw.githubusercontent.com/tiwariabhishekk10/Time-Series/master/Occupancy.csv'
 dataset=pd.read_csv(url,index_col=0,parse_dates=[0],date_parser=parser)
 dataset.head(10)
 
