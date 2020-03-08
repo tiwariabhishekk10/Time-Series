@@ -13,9 +13,9 @@ from keras.layers import LeakyReLU
 def parser(x):
     return datetime.strptime(x,'%d-%m-%Y %H:%M')
 
-####LSTM####
 
-dataset=pd.read_csv(r"D:\occupancy_data\multivariate.csv")#,index_col=0,parse_dates=[0],date_parser=parser)
+url='https://raw.githubusercontent.com/tiwariabhishekk10/Time-Series/master/Occupancy.csv'
+dataset=pd.read_csv(url,index_col=0,parse_dates=[0],date_parser=parser)
 dataset.head(5)
 
 temperature = dataset[dataset.columns[0:1]]
