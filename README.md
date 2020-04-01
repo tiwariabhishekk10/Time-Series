@@ -1,5 +1,5 @@
 # Time-Series-using-DL
-In this project i have wrtten a research paper on 'Comparitive Study on Time Series Forecasting Using Deep Learning Models'.
+In this project I have written a research paper on 'Comparitive Study on Time Series Forecasting Using Deep Learning Models'.
 The link for the paper is: https://www.researchgate.net/publication/339771117_Comparative_Study_on_Time_Series_Forecasting_using_Deep_learning_Models .
 In univariate and multivariate time series forecasting, there are many proposed traditional models
 The problem with traditional models is that they are unable to predict high number of observations.
